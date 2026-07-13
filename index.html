@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পাওয়ার রিভাইভ ব্যাটারি ক্লিনিক</title>
+    <style>
+        /* পেজের সাধারণ ডিজাইন */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        /* হেডার এরিয়া */
+        header {
+            background-color: #0d121e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+        }
+
+        /* নেভিগেশন বার */
+        nav {
+            background-color: #262626;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #3fe3a4; /* সবুজ হাইলাইট */
+        }
+
+        /* মূল কনটেন্ট ও সাইডবার রাখার কন্টেইনার */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* মূল কনটেন্ট এরিয়া */
+        main {
+            flex: 3;
+            background-color: #0d121e;
+            padding: 20px;
+            margin-right: 20px;
+            min-width: 300px;
+            border-radius: 5px;
+        }
+
+        /* ছবি ও ভিডিও সেকশন */
+        .media-section {
+            margin-bottom: 20px;
+        }
+        .media-section h2 {
+            color: #3fe3a4;
+            border-bottom: 2px solid #3fe3a4;
+            padding-bottom: 5px;
+        }
+        
+        /* ছবি ও ভিডিও সাজানোর জন্য রেসপন্সিভ গ্রিড */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        .media-grid img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        .media-grid img:hover {
+            transform: scale(1.03); /* মাউস নিলে সামান্য বড় হবে */
+        }
+        
+        /* লোকাল ভিডিওর জন্য সুন্দর কন্টেইনার */
+        .local-video-container {
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .local-video-container video {
+            width: 100%;
+            display: block;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        /* সাইডবার এরিয়া */
+        aside {
+            flex: 1;
+            background-color: #262626;
+            padding: 20px;
+            min-width: 200px;
+            border-radius: 5px;
+        }
+        aside h3 {
+            color: #3fe3a4;
+        }
+        aside p {
+            margin-top: 0;
+        }
+
+        /* ফুটার এরিয়া */
+        footer {
+            background-color: #0d121e;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+        footer .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+        footer .contact-item {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- হেডার অংশ -->
+    <header>
+        <h1>পাওয়ার রিভাইভ ব্যাটারি ক্লিনিক</h1>
+        <p>আপনার পুরনো ব্যাটারিকে দিন নতুন জীবন!</p>
+    </header>
+
+    <!-- নেভিগেশন মেনু -->
+    <nav>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#media-images">ছবি সমূহ</a>
+        <a href="#media-videos">ভিডিও সমূহ</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
+
+    <!-- মূল কনটেন্ট ও সাইডবার -->
+    <div class="container">
+        <!-- মূল লেখা বা ব্লগ পোস্ট -->
+        <main>
+            <section id="about">
+                <h2>আমাদের সম্পর্কে</h2>
+                <p>পুরাতন ব্যাটারিতে আনুন নতুন জীবন সান সি (Sun C) প্রযুক্তিতে আনুন নতুনের মতো ব্যাকআপ। No Service No pay Power Revive ব্যটারি ক্লিনিক</p>
+            </section>
+
+            <!-- ছবি সেকশন (১০টি ছবি) -->
+            <section id="media-images" class="media-section">
+                <h2>আমাদের গ্যালারি (ছবি সমূহ)</h2>
+                <div class="media-grid">
+                    <!-- ছবি ১ (নতুন যুক্ত করা হয়েছে) -->
+                    <img src="image1.jpeg" alt="ছবি ১">
+                    
+                    <!-- ছবি ২ -->
+                    <img src="image2.jpeg" alt="ছবি ২">
+                    
+                    <!-- ছবি ৩ -->
+                    <img src="image3.jpeg" alt="ছবি ৩">
+                    
+                    <!-- ছবি ৪ -->
+                    <img src="image4.jpeg" alt="ছবি ৪">
+                    
+                    <!-- ছবি ৫ -->
+                    <img src="image5.jpeg" alt="ছবি ৫">
+
+                    <!-- ছবি ৬ -->
+                    <img src="image6.jpeg" alt="ছবি ৬">
+                    
+                    <!-- ছবি ৭ -->
+                    <img src="image7.jpeg" alt="ছবি ৭">
+                    
+                    <!-- ছবি ৮ -->
+                    <img src="image8.jpeg" alt="ছবি ৮">
+                    
+                    <!-- ছবি ৯ -->
+                    <img src="image9.jpeg" alt="ছবি ৯">
+                    
+                    <!-- ছবি ১০ -->
+                    <img src="image10.jpeg" alt="ছবি ১০">
+                </div>
+            </section>
+
+            <!-- ভিডিও সেকশন (৫টি ভিডিও) -->
+            <section id="media-videos" class="media-section">
+                <h2>আমাদের ভিডিও সমূহ</h2>
+                <div class="media-grid">
+                    
+                    <!-- ভিডিও ১ -->
+                    <div class="local-video-container">
+                        <video controls poster="Screenshot 2026-07-12 223949.jpg">
+                            <source src="gemini_generated_video_0e35ba44.mp4" type="video/mp4">
+                            আপনার ব্রাউজারটি ভিডিও প্লে করতে পারছে না।
+                        </video>
+                    </div>
+
+                    <!-- ভিডিও ২ -->
+                    <div class="local-video-container">
+                        <video controls poster="Screenshot 2026-07-12 223949.jpg">
+                            <source src="gemini_generated_video_e7f05282.mp4" type="video/mp4">
+                            আপনার ব্রাউজারটি ভিডিও প্লে করতে পারছে না।
+                        </video>
+                    </div>
+
+                    <!-- ভিডিও ৩ -->
+                    <div class="local-video-container">
+                        <video controls poster="Screenshot 2026-07-12 223949.jpg">
+                            <source src="Power Revive Battery Clinic-1.mp4" type="video/mp4">
+                            আপনার ব্রাউজারটি ভিডিও প্লে করতে পারছে না।
+                        </video>
+                    </div>
+
+                    <!-- ভিডিও ৪ -->
+                    <div class="local-video-container">
+                        <video controls poster="Screenshot 2026-07-12 223949.jpg">
+                            <source src="Power Revive Battery Clinic-2.mp4" type="video/mp4">
+                            আপনার ব্রাউজারটি ভিডিও প্লে করতে পারছে না।
+                        </video>
+                    </div>
+
+                    <!-- ভিডিও ৫ -->
+                    <div class="local-video-container">
+                        <video controls poster="Screenshot 2026-07-12 223949.jpg">
+                            <source src="Power Revive Battery Clinic-3.mp4" type="video/mp4">
+                            আপনার ব্রাউজারটি ভিডিও প্লে করতে পারছে না।
+                        </video>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- সাইডবার -->
+        <aside id="contact">
+            <h3>যোগাযোগ</h3>
+            <p>আপনার যেকোনো জিজ্ঞাসায় আমাদের সাথে যোগাযোগ করুন। আমরা সাহায্য করতে সর্বদা প্রস্তুত।</p>
+            <div>
+                <p><strong>মোবাইল:</strong></p>
+                <p>01777-651868</p>
+                <p><strong>ঠিকানা:</strong></p>
+                <p>পাওয়ার রিভাইভ ব্যাটারি ক্লিনিক,</p>
+                <p>বি.আই.ডি.সি রোড (ভিআইপি বাস ডিপো),</p>
+                <p>জয়দেবপুর, গাজীপুর মহানগর।</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ফুটার অংশ -->
+    <footer>
+        <p>&copy; ২০২৬ পাওয়ার রিভাইভ ব্যাটারি ক্লিনিক। সর্বস্বত্ব সংরক্ষিত।</p>
+        <div class="contact-info">
+            <div class="contact-item">মোবাইল: 01777-651868</div>
+            <div class="contact-item">ইমেল: powerrevivebatteryclinic@gmail.com</div>
+        </div>
+    </footer>
+
+</body>
+</html>
